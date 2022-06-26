@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('Norse-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --font-color-labels: rgb(128, 128, 128); 
+}
+
+h1 {
+    font-family: "Norse-Bold";
+    color: white;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.root-class {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* ------ Picture ---------- */
+
+.picture {
+    display: flex;
+    justify-content: center;
+    width: max(40vw, 320px);
+}
+
+#cover-img {
+    width: 100%;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.odin-logo-div {
+    display: flex;
+    position: absolute;
+    top: 20vh;
+    background-color: rgba(5, 5, 5, 0.7);
+    width: 40vw;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#odin-logo {
+    width: 150px;
+    height: 200px;
+}
+
+.picture > p {
+    position: absolute;
+    bottom: 2vh;
+    color: white;
+}
+
+.picture > p > a {
+    color: aliceblue;
+}
+
+
+
+/* --------- Content --------- */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* --------- Header --------- */
+
+.header {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: flex-start;
+    gap: min(1rem, 1px);
+    font-weight: bolder;
+    padding-top: 2vh;
+    box-shadow: 0rem -0.05rem 0.05rem 0.05rem rgb(158, 158, 158) inset;
+}
+
+.header > p {
+    margin-left: clamp(1%,10%,15%);
+    max-width: 80%;
+    font-size: min(1.5vw, 32px);
+    padding: 0;
+    margin-bottom: 0;
+}
+
+
+
+/* --------- Form ---------- */
+
+.form-div {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding-left: 2vw;
+}
+
+.form-div > h2 {
+    font-size: 1.5vw;
+}
+
+.form-divs {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10vw;
+}
+
+.input-divs {
+
+}
+
+input {
+    width: 20vw;
+    height: 3vh;
+    margin-bottom: 3vh;
+    font-size: 2vh;
+}
+
+input:focus {
+    border: 0.1rem solid blue;
+}
+
+.labels {
+    display: block;
+    color: var(--font-color-labels)
+}
+/* -------- Footer --------- */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: aliceblue;
+    align-items: flex-start;
+    justify-content: center;
+    box-shadow: 0px 0.5rem 5px 0px rgb(185, 185, 185) inset;
+}
+
+#submit-btn {
+    margin-top: 2vh;
+    margin-left: 2vw;
+    background-color: #596D48;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.7vh;
+    width: 10vw;
+    height: 5vh;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+}
+
+#submit-btn:hover {
+    background-color: #375121;
+    box-shadow: none;
+}
+
+#submit-btn:active {
+    background-color: #2f4f14;
+    border: 0.3rem solid rgb(4, 25, 12);
+    box-shadow: none;
+    font-size: 1.6vh;
+}
+
+.footer > p {
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+
+.footer > p > a {
+    color: #2f4f14;
+}
+
+
+
+
+

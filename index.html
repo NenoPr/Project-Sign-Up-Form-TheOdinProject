@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="javascript.js" defer></script>
+    <title>Sign up form</title>
+</head>
+<body>
+
+    <div class="root-class">
+
+        <div class="picture">
+
+            <img src="halie-west-unsplash.jpg" alt="Image of a rendered web matrix" id="cover-img">
+            <div class="odin-logo-div">
+                <img src="odin-lined.png" alt="Odin logo" id="odin-logo">
+            <h1>Odin</h1>
+            </div>
+
+            <p>Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+
+        </div>
+
+        <div class="content">
+            
+            <div class="header">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to!</p>
+            </div>
+
+            <div class="form-div">
+
+                <h2>Let's do this!</h2>
+
+                <form id="form-submit">
+
+                    <div class="form-divs">
+                        <div class="input-div">
+                            <label for="first-name" class="labels">FIRST NAME</label>
+                            <input type="text" name="first-name" id="first-name" required>
+                        </div>
+
+                        <div class="input-divs">
+                            <label for="last-name" class="labels">LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name" required>
+                        </div>
+                    </div>
+
+                    <div class="form-divs">
+                        <div class="input-divs">
+                            <label for="email" class="labels">EMAIL</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+
+                        <div class="input-divs">
+                            <label for="phone" class="labels">PHONE NUMBER</label>
+                            <input type="tel" name="phone" id="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="form-divs">
+                        <div class="input-divs">
+                            <label for="password" class="labels">PASSWORD</label>
+                            <input type="password" name="password" id="pass" required>
+                        </div>
+
+                        <div class="input-divs">
+                            <label for="pass-conf" class="labels">CONFIRM PASSWORD</label>
+                            <input type="password" name="pass-conf" id="pass-conf" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="footer">
+                <button type="submit" id="submit-btn" form="form-submit" value="submit">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
