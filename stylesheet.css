@@ -134,15 +134,48 @@ input {
     height: 3vh;
     margin-bottom: 3vh;
     font-size: 2vh;
+    overflow: visible;
+    border: none;
+    border-bottom: 0.2vh solid rgb(130, 196, 255);
+    margin-top: 0.5vh;
+    border-radius: 0.3vh;
+    outline: none;
+    background-color: white;
+}
+
+input:focus-visible {
+    outline: none;
 }
 
 input:focus {
-    border: 0.1rem solid blue;
+    background-color: white;
+}
+
+input:valid {
+    border-bottom: 0.2vh solid rgb(130, 255, 178);
+}
+
+input:valid {
+    content: "✓";
+}
+
+input:valid:focus {
+    background-color: rgba(74, 219, 105, 0.5);
 }
 
 .labels {
     display: block;
     color: var(--font-color-labels)
+}
+
+#pass-error {
+    position: relative;
+    display: block;
+    top: -2vh;
+    font-size: 1rem;
+    height: 1rem;
+    background-color: white;
+    color: red;
 }
 /* -------- Footer --------- */
 
@@ -152,7 +185,6 @@ input:focus {
     flex: 1;
     background-color: aliceblue;
     align-items: flex-start;
-    justify-content: center;
     box-shadow: 0px 0.5rem 5px 0px rgb(185, 185, 185) inset;
 }
 
@@ -167,6 +199,7 @@ input:focus {
     width: 10vw;
     height: 5vh;
     box-shadow: 0.1rem 0.1rem 0.1rem black;
+    margin-top: 5vh;
 }
 
 #submit-btn:hover {
@@ -189,6 +222,25 @@ input:focus {
 .footer > p > a {
     color: #2f4f14;
 }
+
+/* ------ Error class ---- */
+
+
+
+.error {
+    width  : 100%;
+    padding: 0;
+  
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+  }
+  
+  .error.active {
+    padding: 0.3em;
+  }
 
 
 
